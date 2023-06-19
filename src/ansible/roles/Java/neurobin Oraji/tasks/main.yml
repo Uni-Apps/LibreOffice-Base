@@ -1,6 +1,12 @@
 # https://github.com/neurobin/oraji
 
+- name: Install a list of packages
+  ansible.builtin.apt:
+    pkg:
+    - git
+  become: true
+
 - name: Download Oraji
   ansible.builtin.git:
     repo: https://github.com/neurobin/oraji.git
-    dest: "{{language_java}}"
+    dest: "{{language_java}}/oraji"

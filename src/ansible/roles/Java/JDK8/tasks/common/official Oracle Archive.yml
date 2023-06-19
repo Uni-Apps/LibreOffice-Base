@@ -13,10 +13,4 @@
     headers:
       Cookie: oraclelicense=accept-securebackup-cookie
 
-# - name: Unarchive file
-#   ansible.builtin.unarchive:
-#     src: "{{download_path}}"
-#     dest: "{{language}}/"
-#     remote_src: yes
-
 - include_tasks: "common/{{install_method}}.yml"

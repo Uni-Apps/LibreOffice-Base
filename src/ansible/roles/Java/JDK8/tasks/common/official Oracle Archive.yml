@@ -1,19 +1,15 @@
-# "download JDK8 without login" gist: https://gist.github.com/wavezhang/ba8425f24a968ec9b2a8619d7c2d86a6
-
-# - name: Download Oracle JDK 8
-#   ansible.builtin.get_url:
-#     url: "{{download_url}}"
-#     dest: "{{download_path}}"
 
 - name: Create query directory
   ansible.builtin.file:
     path: "{{language_java}}"
     state: directory
 
-- name: Download file with custom HTTP headers
+# "download JDK without login" gist: https://gist.github.com/wavezhang/ba8425f24a968ec9b2a8619d7c2d86a6
+
+- name: download JDK 8 without login
   ansible.builtin.get_url:
     url: "{{download_url}}"
-    dest: "{{language_java}}"
+    dest: "{{language_java}}/{{file_name}}"
     headers:
       Cookie: oraclelicense=accept-securebackup-cookie
 
@@ -22,3 +18,5 @@
 #     src: "{{download_path}}"
 #     dest: "{{language}}/"
 #     remote_src: yes
+
+- include_tasks: "common/{{install_method}}.yml"

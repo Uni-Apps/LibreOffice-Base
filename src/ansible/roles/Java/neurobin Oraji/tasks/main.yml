@@ -10,3 +10,10 @@
   ansible.builtin.git:
     repo: https://github.com/neurobin/oraji.git
     dest: "{{language_java}}/oraji"
+
+- name: Install oraji
+  ansible.builtin.shell: ./install.sh
+  args:
+    chdir: "{{language_java}}/oraji"
+    creates: /usr/bin/oraji
+  become: true

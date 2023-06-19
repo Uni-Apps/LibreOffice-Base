@@ -14,3 +14,4 @@
   roles:
   - LibreOffice Base
   - driver/Microsoft JDBC
+  - JDK8/Oracle

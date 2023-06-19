@@ -3,9 +3,10 @@
 - hosts: localhost
   vars:
     stor: ".uni/stor/"
-    vm: ".uni/vm/"
+    query: ".uni/query/"
     repo: [
-      { subdir: "{{stor}}", repo: "git@github.com:Source-Graph/connectAzureSQL.git", name: "connectAzureSQL"},
+      { subdir: "{{query}}", repo: "git@github.com:Source-Graph/connectAzureSQL.git", name: "connectAzureSQL"},
+      { subdir: "{{query}}", repo: "git@github.com:Uni-Apps/LibreOffice-Base.git", name: "LibreOffice-Base"},
       { subdir: "{{stor}}", repo: "git@github.com:UniStor/MinIO.git", name: "MinIO"},
       ]
   tasks:

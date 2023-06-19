@@ -4,10 +4,12 @@
   vars:
     stor: ".uni/stor/"
     query: ".uni/query/"
+    query: ".uni/language/java/"
     repo: [
       { subdir: "{{query}}", repo: "git@github.com:Source-Graph/connectAzureSQL.git", name: "connectAzureSQL"},
       { subdir: "{{query}}", repo: "git@github.com:Uni-Apps/LibreOffice-Base.git", name: "LibreOffice-Base"},
       { subdir: "{{stor}}", repo: "git@github.com:UniStor/MinIO.git", name: "MinIO"},
+      { subdir: "{{language}}", repo: "git@github.com:Source-Graph/JDK8.git", name: "JDK8"},
       ]
   tasks:
   - debug:

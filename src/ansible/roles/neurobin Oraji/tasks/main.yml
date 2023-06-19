@@ -1,0 +1,6 @@
+# https://github.com/neurobin/oraji
+
+- name: Download Oraji
+  ansible.builtin.git:
+    repo: https://github.com/neurobin/oraji.git
+    dest: "{{language_java}}"

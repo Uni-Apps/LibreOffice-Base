@@ -12,6 +12,7 @@
     ansible_user: "{{lookup('ansible.builtin.env', 'USER')}}"
 
   roles:
-  - LibreOffice Base
-  - driver/Microsoft JDBC
+  # - LibreOffice Base
+  # - driver/Microsoft JDBC
   - JDK8/Oracle
+  - neurobin Oraji

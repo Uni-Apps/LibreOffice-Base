@@ -1,0 +1,7 @@
+# https://www.oracle.com/java/technologies/javase/javase8-archive-downloads.html
+
+linux_x64_tar: https://download.oracle.com/otn/java/jdk/8u202-b08/1961070e4c9b4e26a04e7f5a083f551e/jdk-8u202-linux-x64.tar.gz?AuthParam=1687146057_5895e541282f9d5aacb2a5c4dfadac41
+
+download_url: "{{linux_x64_tar}}"
+
+download_path: "{{language_java}}/jdk-8u202-linux-x64.tar.gz"

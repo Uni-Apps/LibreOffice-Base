@@ -2,12 +2,10 @@
 
 - name: install Oracle JDK PPA repostiory
   block:
-  become: true
   - name: Add Oracle JDK PPA repository
     apt_repository:
       repo: 'ppa:webupd8team/java'
       state: present
-    when: ansible_distribution == 'Ubuntu' and ansible_distribution_release == 'xenial'
 
   - name: Update apt cache
     apt:
@@ -41,3 +39,4 @@
   - name: Display Java version
     debug:
       var: java_version.stdout_lines
+  become: true

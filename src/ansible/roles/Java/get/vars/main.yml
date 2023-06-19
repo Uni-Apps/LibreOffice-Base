@@ -1,0 +1,5 @@
+home: "{{ lookup('ansible.builtin.env', 'HOME') }}"
+
+language: "{{home}}/.uni/language"
+
+language_java: "{{language}}/java"

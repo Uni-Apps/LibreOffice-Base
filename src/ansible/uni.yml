@@ -13,3 +13,4 @@
 
   roles:
   - LibreOffice Base
+  - driver/Microsoft JDBC

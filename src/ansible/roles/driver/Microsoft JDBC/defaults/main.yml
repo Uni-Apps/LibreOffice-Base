@@ -1,0 +1,3 @@
+download_path: "{{home}}/Downloads/sqljdbc_6.0.8112.200_enu.tar.gz"
+
+extracted_path: "{{query}}"

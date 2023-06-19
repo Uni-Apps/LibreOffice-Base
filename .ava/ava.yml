@@ -5,9 +5,8 @@
     stor: ".uni/stor/"
     vm: ".uni/vm/"
     repo: [
+      { subdir: "{{stor}}", repo: "git@github.com:Source-Graph/connectAzureSQL.git", name: "connectAzureSQL"},
       { subdir: "{{stor}}", repo: "git@github.com:UniStor/MinIO.git", name: "MinIO"},
-      { subdir: "{{vm}}", repo: "git@github.com:Unicorn-OS/Vagrant.git", name: "Vagrant"},
-      { subdir: "{{vm}}", repo: "git@github.com:Unicorn-OS/vagrant.template.git", name: "vagrant.template"}
       ]
   tasks:
   - debug:

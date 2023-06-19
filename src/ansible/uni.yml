@@ -14,5 +14,5 @@
   roles:
   # - LibreOffice Base
   # - driver/Microsoft JDBC
-  - JDK8/Oracle
-  - neurobin Oraji
+  - Java/JDK8
+  # - neurobin Oraji

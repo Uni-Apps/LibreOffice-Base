@@ -1,0 +1,10 @@
+# https://www.oracle.com/java/technologies/javase/javase8-archive-downloads.html
+
+linux_x64_download: https://download.oracle.com/otn-pub/java/jdk/12.0.2+10/e482c34c86bd4bf8b56c0b35558996b9/jdk-12.0.2_linux-x64_bin.tar.gz
+
+download_url: "{{linux_x64_download}}"
+
+download_path: "{{language_java}}/jdk-8u202-linux-x64.tar.gz"
+
+download_script: |
+  wget -c --no-cookies --no-check-certificate --header "Cookie: oraclelicense=accept-securebackup-cookie"  https://download.oracle.com/otn-pub/java/jdk/12.0.2+10/e482c34c86bd4bf8b56c0b35558996b9/jdk-12.0.2_linux-x64_bin.tar.gz

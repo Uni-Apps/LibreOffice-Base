@@ -1,0 +1,7 @@
+---
+- name: Install 
+  ansible.builtin.apt:
+    pkg:
+    - libreoffice-base
+  become: true
+
